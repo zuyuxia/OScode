@@ -37,13 +37,13 @@ int main(){
 	//初始化5个线程，代表5个读者
 	int *pthread_id = nullptr;
 
-	for(int i = 0; i < 5; ++i){
+	for(int i = 0; i < kReadersNumber; ++i){
 		pthread_id = new int(i);
 		pthread_create(&g_threadID[i], NULL, readOperation, (void *)pthread_id);
 	}
 
 	//初始化5个线程，代表5个写者
-	for(int i = 0; i < 5; ++i){
+	for(int i = 0; i < kWritersNumber; ++i){
 		pthread_id = new int(i);
 		pthread_create(&g_threadID[i + kReadersNumber], NULL, writeOperation, (void *)pthread_id);
 	}
