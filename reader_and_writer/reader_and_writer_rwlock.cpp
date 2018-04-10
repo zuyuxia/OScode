@@ -71,6 +71,8 @@ void *readOperation(void *arg){
 		
 		sleep(1);
 	}
+	
+	return nullptr;
 }
 
 void *writeOperation(void *arg){
@@ -92,4 +94,6 @@ void *writeOperation(void *arg){
 
 		sleep(2);
 	}
+	
+	return nullptr;
 }

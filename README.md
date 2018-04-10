@@ -1,6 +1,11 @@
 # OScode
 学习操作系统中的代码和伪代码
 
+## 开发环境
+  * 操作系统：ubuntu 16.04.3 LTS
+  * 编辑器：vim
+  * 使用：直接make即可
+
 ## 生产者与消费者模型
   * 互斥锁加上信号量的解决方案：producers_and_consumers.cpp
   * 互斥锁加上条件变量的解决方案：producers_and_consumers_condition.cpp
